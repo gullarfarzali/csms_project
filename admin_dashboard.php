@@ -3,7 +3,7 @@ session_start();
 
 require_once "admin_auth_check.php";
 
-require __DIR__ . "\\..\\database.php";
+require __DIR__ . "database.php";
 
 // Query to fetch the total number of users
 $sql1 = "SELECT COUNT(*) AS total_users FROM users";
@@ -389,7 +389,7 @@ if ($result3) {
       </thead>
       <tbody class="scrollable-table">
         <?php
-            require __DIR__ . "\\..\\database.php";
+            require __DIR__ . "database.php";
 
             require_once "admin_auth_check.php";
       
