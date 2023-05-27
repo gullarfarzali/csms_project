@@ -4,7 +4,7 @@ session_start();
 
 require_once "admin_auth_check.php";
 
-require __DIR__ . "\\..\\database.php";
+require __DIR__ . "database.php";
 
 $user_id = isset($_GET["user_id"]) ? $_GET["user_id"] : null;
 
