@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register page</title>
+    <link rel="stylesheet" href="styleUserRegister.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/86b5c3aa15.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="register">
+        <h1>Register</h1>
+        <div class="registerform-extra">
+          <form action="user_su_process.php" method="POST" id="regForm">
+            <div class="inputbox">
+              <i class="fa-solid fa-file-signature"></i>
+              <input
+                type="text"
+                id="first_name"
+                name="first_name"
+                class="first_name"
+                placeholder="Enter Firstname"
+                required
+              />
+            </div>
+
+            <div class="inputbox">
+              <i class="fa-solid fa-file-signature"></i>
+              <input
+                type="text"
+                id="last_name"
+                name="last_name"
+                class="last_name"
+                placeholder="Enter Lastname"
+                required
+              />
+            </div>
+            <div class="inputbox">
+              <i class="fa-solid fa-calendar-days"></i>
+              <input
+                type="date"
+                id="date_of_birth"
+                name="date_of_birth"
+                class="form-control form-control-margin"
+                placeholder="Enter Birthdate (format:dd/mm/yyyy)"
+                required
+              />
+            </div>
+        </div>
+        <div class="registerform-main">
+            <div class="inputbox">
+              <i class="fa-solid fa-user"></i>
+              <input
+                type="email"
+                name="email"
+                class="email"
+                placeholder="Enter Email"
+                required
+              />
+            </div>
+            <div class="inputbox">
+              <i class="fa-solid fa-key"></i>
+              <input
+                type="password"
+                name="password"
+                class="password"
+                placeholder="Enter Password"
+                required
+              />
+            </div>
+            <div class="inputbox">
+              <i class="fa-solid fa-square-check"></i>
+              <input
+                type="password"
+                name="password_confirmation"
+                class="password_confirmation"
+                placeholder="Confirm Password"
+                required
+              />
+            </div>
+          </form>
+        </div>
+        <button id="regButton" type="submit">Register</button>
+          <div class="extras">
+            <a href="user_login.html">Have an account?</a>
+            <a href="../index.html" class="back">Back</a>
+          </div>
+      </div>
+    </div>
+
+    <script>
+      document.getElementById("regButton").addEventListener("click", function() {
+        document.getElementById("regForm").submit();
+      });
+    </script>
+  </body>
+</html>

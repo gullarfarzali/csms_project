@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.register {
+    width: 800px;
+    min-height: 450px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: #0b2b53;
+    box-shadow: 15px 5px 30px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px 50px 50px 50px;
+}
+
+.container {
+    background-color: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+h1{
+    color: #fff;
+    text-align: center;
+    font-size: 700;
+    width: 100%;
+
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    
+}
+
+.registerform-extra{
+    color:#ffffff;
+    background: #0b2b53;
+    padding: 25px;
+    padding-top: 0px;
+
+    grid-row-start: 3;
+    grid-row-end: 7;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.registerform-main{
+    color:#ffffff;
+    background: #0b2b53;
+    padding: 25px;
+    padding-top: 0px;
+
+    grid-row-start: 3;
+    grid-row-end: 7;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    
+}
+
+
+.inputbox{
+    border-radius: 3px;
+    background: transparent;
+    outline: none;
+    border: 1px solid #0f68dd;
+    width: 100%;
+    height: 35px;
+    margin:30px 0;
+    background: white;
+}
+
+.inputbox input{
+    background: transparent;
+    width:90%;
+    outline: none;
+    border: 0;
+    padding-left: 5px;
+    height:100%;
+}
+
+::placeholder{
+    color: #04140e;
+}
+
+button{
+    border: 0;
+    border-radius: 3px;
+    padding: 12px;
+    font-size: 18px;
+    background:#fff;
+    color: #04140e;
+    cursor: pointer;
+
+    grid-row-start: 8;
+    grid-row-end: 8;
+    grid-column-start: 2;
+    grid-column-end: 4;
+
+}
+
+button:hover{
+    background-color: #cccccc;
+    transition: all ease 0.5s;
+}
+
+i{
+    color: #04140e;
+    font-size: 15px;
+    padding: 6px;
+}
+
+.extras{
+    display: flex;
+    justify-content: space-between;
+
+    grid-row-start: 9;
+    grid-row-end: 10;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    
+}
+
+.extras a{
+    color: white;
+    font-size:12px;
+    margin: 20px 20px 10px;
+}
+
+.extras a.back{
+    margin-right: 50px;
+}
