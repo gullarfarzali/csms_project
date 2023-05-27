@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . "\\..\\database.php";
+require __DIR__ . "database.php";
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST'){
   $status = $_POST['selectedValue'];
