@@ -4,7 +4,7 @@ session_start();
 
 require_once "admin_auth_check.php";
 
-require __DIR__ . "\\..\\database.php";
+require __DIR__ . "database.php";
 
 if(isset($_POST['submit'])) {
     $first_name = $_POST['first_name'];
@@ -24,7 +24,7 @@ if(isset($_POST['submit'])) {
 
     // Check if it is a valid email
     if ( ! filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)){
-        header("Location: admin_dashnoard.php?msg=Valid email is required");
+        header("Location: admin_dashboard.php?msg=Valid email is required");
         $stmt->close();
     }
     //Check if password contains at least 8 characters
