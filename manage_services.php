@@ -15,7 +15,7 @@
     <nav class="navbar navbar-light text-white bg-primary justify-content-center fs-3 mb-5">Manage Services</nav>
 
     <div class="container">
-      <?php
+      <?php 
       session_start();
       
       require_once "admin_auth_check.php";
@@ -37,7 +37,7 @@
         </thead>
         <tbody>
           <?php
-            require __DIR__ . "\\..\\database.php";
+            require __DIR__ . "database.php";
               $sql = "SELECT * FROM services";
 
               $result = $mysqli->query($sql);
