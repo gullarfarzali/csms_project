@@ -133,7 +133,7 @@
       <?php
             session_start();
             
-            require __DIR__ . "\\..\\database.php";
+            require __DIR__ . "database.php";
 
             if (isset($_SESSION['user_id'])) {
               $user_id = $_SESSION['user_id'];
