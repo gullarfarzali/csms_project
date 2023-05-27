@@ -28,7 +28,7 @@
     $password_hash = password_hash($_POST["password"], PASSWORD_DEFAULT);
 
     //include database connection file
-    $mysqli = require __DIR__ . "\\..\database.php";
+    $mysqli = require __DIR__ . "database.php";
 
     $sql = "INSERT INTO users (first_name, last_name, password_hash, email, date_of_birth)
             VALUES (?, ?, ?, ?, ?)";
