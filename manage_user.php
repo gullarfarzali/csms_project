@@ -40,7 +40,7 @@
         </thead>
         <tbody>
           <?php
-            require __DIR__ . "\\..\\database.php";
+            require __DIR__ . "database.php";
             
               $sql = "SELECT * FROM users";
 
