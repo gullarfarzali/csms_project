@@ -4,7 +4,7 @@ session_start();
 
 require_once "admin_auth_check.php";
 
-require __DIR__ . "\\..\\database.php";
+require __DIR__ . "database.php";
 
 if(isset($_POST['submit'])) {
     $first_name = $_POST['first_name'];
