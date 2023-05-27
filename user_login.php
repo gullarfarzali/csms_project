@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__ . "\\..\\database.php";
+require __DIR__ . "database.php";
 
 session_start();
 
@@ -112,7 +112,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
           </form>
           <div class="extras">
             <a href="user_signup.html">Don't have an account?</a>
-            <a href="../index.html">Back</a>
+            <a href="index.html">Back</a>
           </div>
         </div>
       </div>
