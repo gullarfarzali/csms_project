@@ -38,7 +38,7 @@
         <tbody>
           <?php
 
-            require __DIR__ . "\\..\\database.php";
+            require __DIR__ . "database.php";
 
             require_once "admin_auth_check.php";
 
