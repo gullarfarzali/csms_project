@@ -5,7 +5,7 @@ session_start();
 // Check if the form is submitted
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
-    require __DIR__ . "\\..\\database.php";
+    require __DIR__ . "database.php";
 
     // Retrieve the submitted credentials
     $email = $_POST['email'];
@@ -99,7 +99,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             <button>Login</button>
           </form>
           <div class="extras">
-            <a href="../index.html">Back</a>
+            <a href="index.html">Back</a>
           </div>
         </div>
       </div>
