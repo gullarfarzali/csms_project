@@ -6,6 +6,6 @@ session_destroy();
 
 session_unset();
 
-header("Location: \\csms\\index.html");
+header("Location: index.html");
 
 exit;
